@@ -219,25 +219,25 @@ footer{
 }
 
 /* Using media queries to make webpage responsive  */
-@media (max-width: 1080px){
+@media only screen and (max-width: 1080px){
     #logo, .search, .offer{
         width: 1300px;
     }
 }
 
-@media (max-width: 970px){
+@media only screen and (max-width: 970px){
     #logo, .search, .offer{
         width: 1000px;
     }
 }
 
-@media (max-width: 820px){
+@media only screen and (max-width: 820px){
     #logo, .search, .offer{
         width: 650px;
     }
 }
 
-@media(max-width: 680px){
+@media only screen and (max-width: 680px){
     .footer2-div2{
         display: none;
     }
@@ -251,19 +251,14 @@ footer{
     }
 }
 
-@media (max-width: 500px){
+@media only screen and (max-width: 500px){
     
     #logo, .offer{
         width: 300px;
         position: relative;
-        right: 90px;
+        right: 80px;
         padding: 20px;
     }
-    /* .main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
     footer{
         height: 0px;
         width: 0px;
@@ -286,4 +281,87 @@ footer{
         overflow: hidden;
     }
     
+}
+
+
+/* Adding styling for Apps Dropdown */
+.apps-menu {
+    position: relative;
+    display: inline-block;
+}
+
+#apps-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #5f6368;
+    position: relative;
+    top: -6px;
+}
+
+
+.apps-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    display: none;
+}
+
+.apps-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.apps-dropdown a:hover {
+    background-color: #f1f3f4;
+}
+
+/* Adding styling for Account Icon */
+.account-menu {
+    position: relative;
+    display: inline-block;
+}
+
+#account-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+#account-button > img{
+    position: relative;
+    top: -6px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, .20);
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    display: none;
+}
+
+.account-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.account-dropdown a:hover {
+    background-color: #f1f3f4;
 }
