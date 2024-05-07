@@ -245,9 +245,8 @@ footer{
         width: 400px;
         margin-left: 120px;
     }
-    .search{
-        width: 200px;
-        margin-left: 220px;
+    #input{
+        width: 500px;
 
     }
 }
@@ -257,14 +256,14 @@ footer{
     #logo, .offer{
         width: 300px;
         position: relative;
-        right: 100px;
-        padding: 50px;
+        right: 90px;
+        padding: 20px;
     }
-    .main{
+    /* .main{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
     footer{
         height: 0px;
         width: 0px;
@@ -274,6 +273,17 @@ footer{
         width: 300px;
         position: relative;
         right: 150px;
+    }
+    #input{
+        width: 350px;
+        position: relative;
+        right: 125px;
+
+    }
+    #cross, #mic_icon, #search_by_image{
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
     }
     
 }
