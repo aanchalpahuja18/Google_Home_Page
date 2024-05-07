@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Homepage Clone</title>
+
+    <!-- Linking my CSS stylesheet below -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Using font-awesome for webpage  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
+
+    <!-- Creating Header & Nav links  -->
     <header class="header">
         <nav class="nav">
             <a href="">Gmail</a>
@@ -18,6 +24,7 @@
         </nav>
     </header>
 
+    <!-- Creating body tag to hold the google icon, functional search bar, buttons to search the query & languages offered by google -->
     <body>
         <div id="logo">
             <img src="google_logo.png" alt="Google Logo">
@@ -25,11 +32,8 @@
 
         <div class="search">
             <div class="complete-input">
-                <div id="search_icon">
-                    <img src="search.png" alt="" >
-                </div>
-                <input type="text" id="input" class="query" value="">
-                <img src="cross.png" alt="" id="cross">
+                <input type="text" id="input" class="query" value="" placeholder="Search Google or type a URL">
+                <button id="cross">X</button>
                 <img src="mic.png" alt="" id="mic_icon">
                 <img src="search_by_image.png" alt="" id="search_by_image">
             </input> 
@@ -37,7 +41,7 @@
 
             <div class="buttons">
                 <button class="searchBtn">Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <button id="lucky">I'm Feeling Lucky</button>
             </div>
         </div>
 
@@ -49,10 +53,15 @@
     </body>
 
     <br> <br>
+
+    <!-- Using footer tag to make 2 footers which can be seen in the actual homepage of google -->
     <footer>
+
+        <!-- 1st footer tag  -->
         <div id="footer1">India</div>
-    
-        <div id="footer2">
+        
+        <!--2nd footer tag-->
+        <div class="footer2">
             <div class="footer2-div1">
             <a href="">About</a>
             <a href="">Advertising</a>
@@ -68,6 +77,9 @@
         </div>
 
     </footer>
+
+
+<!-- Linking my javascript file below -->
 <script src="app.js"></script>
 </body>
 </html>

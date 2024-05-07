@@ -1,6 +1,8 @@
 *{
     margin: 0;
 }
+
+/* Styling header & nav bar */
 .header{
     height: 60px;
     width: 1519.2px;
@@ -16,7 +18,6 @@
 .nav > a:hover{
     text-decoration: underline;
     color: black;
-    
 }
 
 .nav{
@@ -28,6 +29,8 @@
     height: 48px;
     padding: 0px 4px 0px 32px;
 }
+
+/* Styling google logo */
 #logo{
     width: 1519.2px;
     height: 92px;
@@ -47,6 +50,7 @@ justify-content: center;
 
 }
 
+/* Styling the input search bar */
 #input{
     height: 46px;
     background: #fff;
@@ -59,6 +63,7 @@ justify-content: center;
 #input:hover{
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
+
 #search_icon{
     width: 33px;
     height: 46px;
@@ -68,10 +73,14 @@ justify-content: center;
     top: 65px;
 }
 #cross{
+    border: none;
+    font-size: 22px;
+    background-color: white;
   position: relative;
   right: 150px;  
-  top: 6px;
+  top: 0px;
   cursor: pointer;
+  color:  rgba(0, 0, 0, .60);
 }
 
 #mic_icon{
@@ -89,12 +98,15 @@ cursor: pointer;
 }
 .query{
     padding: 5px 8px 0px 14px;
+    background-color: #fff;
     margin: 0px 0px 8px;
     color: rgba(0, 0, 0, .87);
     font-size: 15px;
     font-family: arial, sans-serif;
     border: none;
 }
+
+/* Styling all the buttons available */
 .buttons{
     width: 584px;
     height: 88px;
@@ -116,6 +128,12 @@ cursor: pointer;
     text-align: center;
     cursor: pointer;
 }
+
+.buttons > button:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styling the portion of no. of languages google offer  */
 
 .offer{
     width: 1519.2px;
@@ -140,6 +158,7 @@ cursor: pointer;
     height: 28px;
 }
 
+/* Styling footer portion */
 
 footer{
     position: absolute;
@@ -158,7 +177,7 @@ footer{
     background-color: #F0F0F0;
 }
 
-#footer2{
+.footer2{
     display: flex;
     justify-content: space-between;
     background-color: #F0F0F0;
@@ -197,4 +216,38 @@ footer{
 
 .footer2-div1 > a:hover{
     text-decoration: underline;
+}
+
+/* Using media queries to make webpage responsive  */
+@media (max-width: 1080px){
+    #logo, .search, .offer{
+        width: 1300px;
+    }
+}
+
+@media (max-width: 970px){
+    #logo, .search, .offer{
+        width: 1000px;
+    }
+}
+
+@media (max-width: 820px){
+    #logo, .search, .offer{
+        width: 650px;
+    }
+}
+
+@media(max-width: 680px){
+    .footer2-div2{
+        display: none;
+    }
+    #logo, .offer{
+        width: 600px;
+        margin-left: 15px;
+    }
+    .search{
+        width: 400px;
+        margin-left: 120px;
+
+    }
 }
